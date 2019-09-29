@@ -9,9 +9,9 @@ def crop_square(img):
     center = (int(x/2), int(y/2))
     length = int(min(x, y)/2)
     left_top = (center[0] - length, center[1] - length)
-    right_buttom = (center[0] + length, center[1] + length)
+    right_bottom = (center[0] + length, center[1] + length)
     
-    new_img = img.crop(left_top + right_buttom)
+    new_img = img.crop(left_top + right_bottom)
     return new_img
 
 
